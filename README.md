@@ -16,7 +16,13 @@ Table of contents
       - [`generators/`](#coordinator)
       - [`src/` (views)](#pages-views)
       - [`utilities/`](#theme) 
-## `.admin/`
+
+###  Why
+###  Overview
+###  Application
+
+## `.admin/` 
+> You can skip this explanation, this is just an overview on the topic of why we have decided to go with this particular
 
 Admin portal that allows the admins to delete, fetch or modify reservation data.
 

@@ -15,3 +15,19 @@ Table of contents
     - [Why](#why)
     - [Overview](#overview)
     - [`application/`](#application)
+## `.admin/`
+
+Admin portal that allows the admins to delete, fetch or modify reservation data.
+
+## `.generators/`
+
+ This contains a generator that will allow the user to generate a new project.
+ 
+ ## `.src/`
+
+ Main location of the project
+ 
+  
+ ## `.utilities/`
+
+ Utility files

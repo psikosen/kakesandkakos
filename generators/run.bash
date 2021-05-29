@@ -7,7 +7,7 @@
 date +”%m/%d/%Y”
 
 cd ..
-
+echo "Enter project name: "
 read dirname
 mkdir dirname
 cd dirname

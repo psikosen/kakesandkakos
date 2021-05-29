@@ -8,13 +8,14 @@ will display date and will prompt you for entry of file name
 
 Table of contents
 - [Architecture](#architecture)
-  - [`.admin/`](#admin) 
-  - [`generators/` - generators](#android---android-required-files)
-  - [`src/` -src](#ios---ios-required-files)
-  - [`utilities/` - Utilities](#lib---flutter-application)
+  - [`.About Project/`](#admin)  
     - [Why](#why)
     - [Overview](#overview)
     - [`application/`](#application)
+      - [`admin/`](#constants)
+      - [`generators/`](#coordinator)
+      - [`src/` (views)](#pages-views)
+      - [`utilities/`](#theme) 
 ## `.admin/`
 
 Admin portal that allows the admins to delete, fetch or modify reservation data.

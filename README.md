@@ -1,11 +1,5 @@
 # kakesandkakos
 
-if files do not exist use generator to create a project for you.
-generators
-bash make.bash
-will display date and will prompt you for entry of file name
-
-
 Table of contents
 - [Architecture](#architecture)
   - [`.About Project/`](#admin)  
@@ -16,6 +10,8 @@ Table of contents
       - [`generators/`](#coordinator)
       - [`src/` (views)](#pages-views)
       - [`utilities/`](#theme) 
+    - [`Bash Files`](#Bash)
+      - [`intro/`](#constants)
 
 ## `.About Project/` 
 ###  Why
@@ -39,3 +35,7 @@ Admin portal that allows the admins to delete, fetch or modify reservation data.
  ## `.utilities/`
 
  Utility files
+ 
+  ## `.intro/`
+ If files do not exist use generator to create a project for you.generators bash make.bash will display date and will prompt you for entry of file name
+

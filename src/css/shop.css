@@ -1,0 +1,44 @@
+.selector-for-some-widget {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  
+  .navbar-expand-sm .navbar-nav {
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    color: #fff;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+  }
+
+  #menuContainer{
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+  }
+
+  #menuContainer button{
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    margin: 25px;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+  }
+
+  #menuContainer button:hover{
+      color: #fff;
+      background-color: rgb(29, 75, 191);
+  }

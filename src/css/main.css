@@ -1,0 +1,282 @@
+.selector-for-some-widget {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.navbar-expand-sm .navbar-nav {
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+.carousel-item h1{
+  margin-bottom: -6.8rem;
+  letter-spacing: 2px;
+}
+
+#carouselExampleIndicators img{
+  width: 50%;
+  height: 50%;
+}
+
+.carousel-item h3{
+  position: relative;
+  bottom: -7.8rem;
+  letter-spacing: 3px;
+}
+
+/* midsection */
+
+#midSection{
+  display: grid;
+  grid-template-columns: 2fr 50%;
+  justify-content: space-around;
+  padding-left: 10%;
+  height: 100vh;
+}
+
+#midSection h1{
+  font-size: 55px;
+  letter-spacing: 2px;
+  height: 50%;
+  line-height: 65px;
+  text-align: left;
+  padding: 25px;
+  position: relative;
+  left: 25%;
+  width: 45%;
+  cursor: pointer;
+}
+
+#midSection img{
+  padding: 25px;
+  height: 400px;
+  width: 500px;
+  cursor: pointer;
+}
+
+/* container-fluid images */
+
+
+.container-fluid a{
+  position: relative;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.container-fluid .text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  opacity: 0;
+  transition: all .4s ease-in-out;
+}
+
+.container-fluid a:hover .text{
+  opacity: 1;
+  color: #fff;
+}
+
+/* PRODUCTS SECTION */
+
+#productSection{
+  height: 120vh;
+  width: 100%;
+  position: relative;
+  top: 550px;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+#productSection h1{
+  text-align: center;
+}
+
+.cakes a img{
+  width: 500px;
+  height: 300px;
+  padding: 10px;
+}
+
+
+.cupcakes a img{
+  width: 500px;
+  height: 300px;
+  padding: 10px;
+}
+
+.donuts a img{
+  width: 500px;
+  height: 300px;
+  padding: 10px;
+}
+
+.cookies a img{
+  width: 500px;
+  height: 300px;
+  padding: 10px;
+}
+
+.cookies p{
+  text-align: center;
+}
+
+.donuts p{
+  text-align: center;
+}
+
+.cupcakes p{
+  text-align: center;
+}
+
+.cakes p{
+  text-align: center;
+}
+
+
+/* products container */
+
+.productsContainer{
+  display: flex;
+  width: 100%;
+}
+
+/* add to order span */
+
+#addToOrder{
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+
+/* testimonials */
+
+#testimonialsContainer h1{
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.testimonials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.testimonials .client{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.testimonials .client h3{
+  margin: 0 auto;
+}
+
+.testimonials .client p{
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+
+.testimonials .client1img{
+  background: url('https://images.pexels.com/photos/3263460/pexels-photo-3263460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.testimonials .client2img{
+  background: url('https://images.pexels.com/photos/886404/pexels-photo-886404.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.testimonials .client3img{
+  background: url('https://images.pexels.com/photos/3263460/pexels-photo-3263460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.testimonials .client4img{
+  background: url('https://images.pexels.com/photos/3263460/pexels-photo-3263460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+
+
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .carousel-caption{
+      position: relative;
+      top: 5%;
+    }
+    img{
+      height: 35.5rem;
+    }
+
+    h1{
+      margin: 0 auto;
+      height: 5rem;
+      font-size: 5.5rem;
+    }
+
+    .carousel-caption{
+      padding-bottom: 5%;
+    } 
+    
+}

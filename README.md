@@ -4,7 +4,7 @@
 # KSpot Client
 
 Table of contents
-  - [`.KSpot Client/`](#KSpot Client)
+  - [`.KSpot_Client/`](#KSpot Client)
   - [`.vscode/`](#vscode)
     - [Useful vscode extensions](#useful-vscode-extensions)
   - [`android/` - Android required files](#android---android-required-files)
@@ -14,7 +14,7 @@ Table of contents
 
 
 
-## `.KSpot Client/`
+## `.KSpot_Client/`
 # KSpot Client
 
 This repo is intended to house the mobile client and the admin UI for the kinderspot application.

@@ -10,8 +10,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Marck+Script&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
     <title>kateringSite</title>
 </head>
-<body>
+<body id="body">
     <!----------NAVBAR----------->
+    <div class="mobileMenuLinks active">
+      <div class="closeBtnContainer">
+        <ion-icon name="close" id="closeBtn"></ion-icon>
+      </div>
+      <a href="#contact">Contact</a>
+      <a href="#reservations">Reservations</a>
+      <a href="#testimonials">Testimonials</a>
+       <a href="#about">About</a>
+    </div>
     <div id="navbar">
         <div class="mobileMenuBtn">
             <ion-icon name="grid-outline" id="mobileBtn"></ion-icon>
@@ -21,8 +30,9 @@
         </div>
         <div class="navbarLinks">
             <a href="#contact">Contact</a>
-            <a href="#news">Reservations</a>
-             <a href="#home">About</a>
+            <a href="#reservations">Reservations</a>
+            <a href="#testimonials">Testimonials</a>
+             <a href="#about">About</a>
         </div>
       </div>
       <!------SLIDESHOW------->
@@ -75,47 +85,84 @@
   <span class="dot" onclick="currentSlide(5)"></span>
 </div>
 
-<section>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam hic autem maxime in vero optio dolores quod? Nemo iste similique incidunt, accusantium, consequuntur, nostrum necessitatibus vitae soluta vel veritatis esse!
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae beatae quasi cum sit dignissimos iste fuga cumque! Magnam consequuntur necessitatibus fuga. Neque nobis, nostrum a excepturi labore nesciunt voluptas.
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati adipisci necessitatibus vitae quia reprehenderit nostrum, illum nobis ipsam et harum accusamus in ratione numquam non dolorem voluptas provident totam sequi
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quo officiis aliquam totam ipsa. Laborum quae doloremque tempora veniam similique sunt itaque dolores perspiciatis voluptatibus nisi, illo animi. Sed, accusamus.
-  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, est delectus amet dolor fugit quaerat aliquid expedita vel nulla sit nam, blanditiis modi officia dignissimos. Accusantium vero numquam dignissimos doloribus.
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam hic autem maxime in vero optio dolores quod? Nemo iste similique incidunt, accusantium, consequuntur, nostrum necessitatibus vitae soluta vel veritatis esse!
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae beatae quasi cum sit dignissimos iste fuga cumque! Magnam consequuntur necessitatibus fuga. Neque nobis, nostrum a excepturi labore nesciunt voluptas.
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati adipisci necessitatibus vitae quia reprehenderit nostrum, illum nobis ipsam et harum accusamus in ratione numquam non dolorem voluptas provident totam sequi
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quo officiis aliquam totam ipsa. Laborum quae doloremque tempora veniam similique sunt itaque dolores perspiciatis voluptatibus nisi, illo animi. Sed, accusamus.
-  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, est delectus amet dolor fugit quaerat aliquid expedita vel nulla sit nam, blanditiis modi officia dignissimos. Accusantium vero numquam dignissimos doloribus.
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam hic autem maxime in vero optio dolores quod? Nemo iste similique incidunt, accusantium, consequuntur, nostrum necessitatibus vitae soluta vel veritatis esse!
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae beatae quasi cum sit dignissimos iste fuga cumque! Magnam consequuntur necessitatibus fuga. Neque nobis, nostrum a excepturi labore nesciunt voluptas.
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati adipisci necessitatibus vitae quia reprehenderit nostrum, illum nobis ipsam et harum accusamus in ratione numquam non dolorem voluptas provident totam sequi
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quo officiis aliquam totam ipsa. Laborum quae doloremque tempora veniam similique sunt itaque dolores perspiciatis voluptatibus nisi, illo animi. Sed, accusamus.
-  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, est delectus amet dolor fugit quaerat aliquid expedita vel nulla sit nam, blanditiis modi officia dignissimos. Accusantium vero numquam dignissimos doloribus.
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam hic autem maxime in vero optio dolores quod? Nemo iste similique incidunt, accusantium, consequuntur, nostrum necessitatibus vitae soluta vel veritatis esse!
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae beatae quasi cum sit dignissimos iste fuga cumque! Magnam consequuntur necessitatibus fuga. Neque nobis, nostrum a excepturi labore nesciunt voluptas.
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati adipisci necessitatibus vitae quia reprehenderit nostrum, illum nobis ipsam et harum accusamus in ratione numquam non dolorem voluptas provident totam sequi
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quo officiis aliquam totam ipsa. Laborum quae doloremque tempora veniam similique sunt itaque dolores perspiciatis voluptatibus nisi, illo animi. Sed, accusamus.
-  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, est delectus amet dolor fugit quaerat aliquid expedita vel nulla sit nam, blanditiis modi officia dignissimos. Accusantium vero numquam dignissimos doloribus.
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam hic autem maxime in vero optio dolores quod? Nemo iste similique incidunt, accusantium, consequuntur, nostrum necessitatibus vitae soluta vel veritatis esse!
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae beatae quasi cum sit dignissimos iste fuga cumque! Magnam consequuntur necessitatibus fuga. Neque nobis, nostrum a excepturi labore nesciunt voluptas.
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati adipisci necessitatibus vitae quia reprehenderit nostrum, illum nobis ipsam et harum accusamus in ratione numquam non dolorem voluptas provident totam sequi
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quo officiis aliquam totam ipsa. Laborum quae doloremque tempora veniam similique sunt itaque dolores perspiciatis voluptatibus nisi, illo animi. Sed, accusamus.
-  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, est delectus amet dolor fugit quaerat aliquid expedita vel nulla sit nam, blanditiis modi officia dignissimos. Accusantium vero numquam dignissimos doloribus.
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam hic autem maxime in vero optio dolores quod? Nemo iste similique incidunt, accusantium, consequuntur, nostrum necessitatibus vitae soluta vel veritatis esse!
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae beatae quasi cum sit dignissimos iste fuga cumque! Magnam consequuntur necessitatibus fuga. Neque nobis, nostrum a excepturi labore nesciunt voluptas.
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati adipisci necessitatibus vitae quia reprehenderit nostrum, illum nobis ipsam et harum accusamus in ratione numquam non dolorem voluptas provident totam sequi
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quo officiis aliquam totam ipsa. Laborum quae doloremque tempora veniam similique sunt itaque dolores perspiciatis voluptatibus nisi, illo animi. Sed, accusamus.
-  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, est delectus amet dolor fugit quaerat aliquid expedita vel nulla sit nam, blanditiis modi officia dignissimos. Accusantium vero numquam dignissimos doloribus.
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam hic autem maxime in vero optio dolores quod? Nemo iste similique incidunt, accusantium, consequuntur, nostrum necessitatibus vitae soluta vel veritatis esse!
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae beatae quasi cum sit dignissimos iste fuga cumque! Magnam consequuntur necessitatibus fuga. Neque nobis, nostrum a excepturi labore nesciunt voluptas.
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati adipisci necessitatibus vitae quia reprehenderit nostrum, illum nobis ipsam et harum accusamus in ratione numquam non dolorem voluptas provident totam sequi
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quo officiis aliquam totam ipsa. Laborum quae doloremque tempora veniam similique sunt itaque dolores perspiciatis voluptatibus nisi, illo animi. Sed, accusamus.
-  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, est delectus amet dolor fugit quaerat aliquid expedita vel nulla sit nam, blanditiis modi officia dignissimos. Accusantium vero numquam dignissimos doloribus.
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam hic autem maxime in vero optio dolores quod? Nemo iste similique incidunt, accusantium, consequuntur, nostrum necessitatibus vitae soluta vel veritatis esse!
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae beatae quasi cum sit dignissimos iste fuga cumque! Magnam consequuntur necessitatibus fuga. Neque nobis, nostrum a excepturi labore nesciunt voluptas.
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati adipisci necessitatibus vitae quia reprehenderit nostrum, illum nobis ipsam et harum accusamus in ratione numquam non dolorem voluptas provident totam sequi
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quo officiis aliquam totam ipsa. Laborum quae doloremque tempora veniam similique sunt itaque dolores perspiciatis voluptatibus nisi, illo animi. Sed, accusamus.
-  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, est delectus amet dolor fugit quaerat aliquid expedita vel nulla sit nam, blanditiis modi officia dignissimos. Accusantium vero numquam dignissimos doloribus.
+<section id="about">
+  <div class="aboutTitle">
+    About The Owner
+  </div>
+  <div class="aboutImg">
+    <img src="./tempOwner.jpeg" alt="">
+  </div>
+  <div class="aboutBio">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia est ipsam natus, laudantium ea tempore odit blanditiis facere deleniti maxime, ipsum corrupti magnam, perspiciatis molestias ipsa voluptate. Magnam, saepe perspiciatis!
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, ea et praesentium soluta sint commodi blanditiis possimus qui quaerat quas iure officiis itaque optio, quos eaque odit nam sit deleniti?
+  </div>
+</section>
+<section id="popularItems">
+  <div class="itemsTitle">
+    <h4>Popular Dishes</h4>
+  </div>
+  <div class="dishContainer">
+    <div class="dish dish1">
+      <div class="dishImg1"></div>
+      <h4>Lobster Tails</h4>
+      <div class="starsContainer">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </div>
+    </div>
+    <div class="dish dish2">
+      <div class="dishImg2"></div>
+      <h4>BBQ Ribs</h4>
+      <div class="starsContainer">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </div>
+    </div>
+    <div class="dish dish3">
+      <div class="dishImg3"></div>
+      <h4>Spaghetti</h4>
+      <div class="starsContainer">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </div>
+    </div>
+    <div class="dish dish4">
+      <div class="dishImg4"></div>
+      <h4>Baked Chicken</h4>
+      <div class="starsContainer">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </div>
+    </div>
+    <div class="dish dish5">
+      <div class="dishImg5"></div>
+      <h4>Fried Shrimp</h4>
+      <div class="starsContainer">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </div>
+    </div>
+    <div class="dish dish6">
+      <div class="dishImg6"></div>
+      <h4>Beef Ox Tails</h4>
+      <div class="starsContainer">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </div>
+    </div>
+  </div>
 </section>
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

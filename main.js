@@ -45,3 +45,72 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+// mobile navbar
+
+// variables 
+
+const mobileMenuBtn = document.getElementById("mobileBtn");
+const closeBtn = document.getElementById("closeBtn");
+const mobileMenu = document.querySelector('.mobileMenuLinks.active');
+const mobileNavLinks = mobileMenu.children;
+
+console.log(mobileNavLinks)
+
+console.log(mobileMenu)
+
+// close menu //
+
+const closeMenu = () => {
+
+  mobileMenu.style.display = "none";
+
+  if(mobileMenu.classList !== 'active'){
+    mobileMenu.classList.toggle('active');
+    document.querySelector('.mobileMenuLinks').style.display.transition = "all .4s ease-in-out";
+  }
+  else {
+    mobileMenu.style.display = "none";
+    document.querySelector('.mobileMenuLinks').style.display.transition = "all .4s ease-in-out";
+  }
+}
+
+closeMenu();
+
+
+// close button event listener //
+
+closeBtn.addEventListener('click', (e) => {
+
+  if(e.target){
+    mobileMenu.style.display = "none";
+  }
+
+  document.querySelector('.mobileMenuLinks').style.display.transition = "all .4s ease-in-out";
+
+})
+
+// mobile btn event listener // 
+
+mobileMenuBtn.addEventListener('click', (e) => {
+
+  if(e.target){
+    mobileMenu.style.height = "101vh";
+    mobileMenu.style.display = "block";
+    mobileMenu.style.display.backgroundColor = "black";
+    document.querySelector('.mobileMenuLinks.active').style.display.color = "black";
+    document.querySelector('.mobileMenuLinks.active').style.display.transition = "all .4s ease-in-out";
+    document.querySelector('.mobileMenuLinks.active').style.display.position = "fixed";
+    document.querySelector('.mobileMenuLinks.active').style.display.width = "100%";
+    document.querySelector('.mobileMenuLinks.active').style.display.height = "100%";
+    document.querySelector('.mobileMenuLinks.active').style.display.top = "0%";
+    document.querySelector('.mobileMenuLinks.active').style.display.left = "0%";
+    document.querySelector('.mobileMenuLinks').style.display.right = "0%";
+    document.querySelector('.mobileMenuLinks').style.display.bottom = "0%";
+  } 
+
+  /*if(e.target){
+    mobileMenu.classList.toggle('active')
+  } */
+  
+})

@@ -1,0 +1,180 @@
+*{
+    font-family: 'Open sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* navbar */ 
+
+#navbar{
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+/* navbar links */
+
+#navbar a{
+    float: right;
+    display: flex;
+    color: #fff;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+
+/* Portrait */
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+
+  /* mobile menu */
+
+
+
+  .mobileMenuLinks .active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 0 auto;
+    background-color: #000;
+    transform: translateY(18rem);
+    position: absolute;
+    bottom: 50%;
+    width: 57vh;
+    height: 101vh;
+    z-index: 900;
+    transition: all .4s ease-in-out;
+}
+
+.mobileMenuLinks{
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  height: 0 auto;
+  color: #000;
+  background-color: #000;
+  transform: translateY(18rem);
+  position: absolute;
+  width: 57vh;
+  height: 101vh;
+  z-index: 900;
+}
+
+  .closeBtnContainer{
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+   top: 3rem;
+  }
+
+  #closeBtn{
+    padding: 10px;
+    font-size: 65px;
+  }
+
+  /* navbar */
+
+  .navbarLinks{
+    display: none;
+  }
+
+  .mobileMenuBtn{
+    padding: 10px;
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .navbarLogo h6{
+      font-size: 22px;
+      letter-spacing: 2px;
+      color: #fff;
+    }
+
+    /* reservations */
+
+    #reservationsContainer{
+        background: url('./reservationsBackground.png');
+        object-fit: cover;
+        background-position: center;
+        height: 140vh;
+        width: 100%;
+    }
+
+    .reservationsText h1{
+        padding: 50px;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+
+    #resForm{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .userInfo{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .userInfo input{
+        margin: 15px;
+        font-size: 22px;
+        padding: 10px;
+        border: none;
+        border-bottom: 1px solid #000;
+        background: transparent;
+
+    }
+
+
+
+    .userInfo4{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .guestQuantityContainer{
+        margin: 10px;
+    }
+
+    .guestQuantityContainer select{
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .guestTimeContainer{
+        margin: 10px;
+    }
+
+
+    .guestTimeContainer select{
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .reservationBtnContainer{
+        margin: 0 auto;
+    }
+
+    #reservationBtn{
+        padding: 10px;
+        font-size: 25px
+    }
+
+
+}

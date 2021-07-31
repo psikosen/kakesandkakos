@@ -1,90 +1,75 @@
 // variables 
 
-const firstName = document.getElementById("fname");
-const middleName = document.getElementById("mname");
-const lastName = document.getElementById("lname");
-const userDate = document.getElementById("userDate");
-const userTime = document.getElementById("arrivalTime");
-const userAmount = document.getElementById("guestAmount");
-// PLACEHOLDERS
+const form = document.getElementById("resForm");
+const firstName = document.getElementById("fName");
+const lastName = document.getElementById("lName");
+const phone = document.getElementById("phone");
+const address = document.getElementById("address");
+const guestQuantity = document.getElementById("guestQuantity");
+const guestTime = document.getElementById("guestTime");
+const zipCode = document.getElementById("zipCode");
+const reserveBtn = document.getElementById("reservationBtn");
 
-firstName.placeholder = "First Name";
-middleName.placeholder = "Middle Name";
-lastName.placeholder = "Last Name";
-
-// STYLING INPUTS 
-
-const firstNameStyle = () => {
-    firstName.style.border = "none";
-    firstName.style.borderBottom = "1px solid black";
-    firstName.style.outline = "none";
-    firstName.style.textAlign = "left";
+const placeholders = () => {
+    firstName.placeholder = "First Name";
+    lastName.placeholder = "Last Name";
+    phone.placeholder = "Phone Number";
+    address.placeholder = "Address";
+    zipCode.placeholder = "Zip Code";
 }
 
-const middleNameStyle = () => {
-    middleName.style.border = "none";
-    middleName.style.borderBottom = "1px solid black";
-    middleName.style.outline = "none";
-    middleName.style.textAlign = "left";
+placeholders();
+
+document.getElementById("guestQuantity")[0] = disabled;
+
+
+// check to see if field is empty
+
+const emptyFields = () => {
+    if(firstName.value === ''){
+        firstName.style.borderBottomColor = "red";
+    }
+    if(lastName.value === ''){
+        lastName.style.borderBottomColor = "red";
+    }
+    if(phone.value === ''){
+        phone.style.borderBottomColor = "red";
+    }
+    if(address.value === ''){
+        address.style.borderBottomColor = "red";
+    }
+    if(zipCode.value === ''){
+        zipCode.style.borderBottomColor = "red";
+    }
 }
 
-const lastNameStyle = () => {
-    lastName.style.border = "none";
-    lastName.style.borderBottom = "1px solid black";
-    lastName.style.outline = "none";
-    lastName.style.textAlign = "left";
-}
-
-const userDateStyle = () => {
-    userDate.style.border = "none";
-    userDate.style.borderBottom = "1px solid black";
-    userDate.style.outline = "none";
-    userDate.style.textAlign = "left";
-}
-
-firstNameStyle();
-middleNameStyle();
-lastNameStyle();
-userDateStyle();
-
-// INSERTING OPTIONS INTO GUEST SELECT 
-
-const guestInput = () => {
-    const option1 = document.createElement("option");
-    const option2 = document.createElement("option");
-    const option3 = document.createElement("option");
-
-    option1.text = "1-2";
-    option2.text = "3-4";
-    option3.text = "5+";
-
-    userAmount.appendChild(option1);
-    userAmount.appendChild(option2);
-    userAmount.appendChild(option3);
-
-}
-
-guestInput();
 
 
-const arriveTimeInput = () => {
-    const time1 = document.createElement("option");
-    const time2 = document.createElement("option");
-    const time3 = document.createElement("option");
-    const time4 = document.createElement("option");
-    const time5 = document.createElement("option");
+reserveBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    if(firstName.value === '' && lastName.value === ''){
+        firstName.style.borderBottomColor = "red";
+        firstName.placeholder = "Enter Your First Name";
+        lastName.style.borderBottomColor = "red";
+        lastName.placeholder = "Enter Your Last Name";
+    }
 
-    time1.text = "1pm";
-    time2.text = "2pm";
-    time3.text = "3pm";
-    time4.text = "4pm";
-    time5.text = "5pm";
+    if(phone.value === '' && address.value === '' && zipCode.value === ''){
+        phone.style.borderBottomColor = "red";
+        phone.placeholder = "Enter Your Phone";
+        address.style.borderBottomColor = "red";
+        address.placeholder = "Enter Your Address";
+        zipCode.style.borderBottomColor = "red";
+        zipCode.placeholder = "Enter Your Zip Code";
+    }
 
-    userTime.appendChild(time1);
-    userTime.appendChild(time2);
-    userTime.appendChild(time3);
-    userTime.appendChild(time4);
-    userTime.appendChild(time5);
-}
+    if(reserveBtn){
+        console.log(firstName.value);
+        console.log(lastName.value);
+        console.log(phone.value);
+        console.log(address.value);
+        console.log(guestQuantity.value);
+        console.log(guestTime.value);
+    }
+})
 
-arriveTimeInput();

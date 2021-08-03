@@ -20,7 +20,6 @@ const placeholders = () => {
 
 placeholders();
 
-document.getElementById("guestQuantity")[0] = disabled;
 
 
 // check to see if field is empty
@@ -64,12 +63,10 @@ reserveBtn.addEventListener('click', (e) => {
     }
 
     if(reserveBtn){
-        console.log(firstName.value);
-        console.log(lastName.value);
-        console.log(phone.value);
-        console.log(address.value);
-        console.log(guestQuantity.value);
-        console.log(guestTime.value);
+        const customerName = firstName.value + ' ' + lastName.value;
+        const customerInfo = phone.value + ' ' + zipCode.value;
+        console.log(customerName);
+        console.log(customerInfo);
     }
 })
 

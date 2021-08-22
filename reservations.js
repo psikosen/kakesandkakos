@@ -70,3 +70,5 @@ reserveBtn.addEventListener('click', (e) => {
     }
 })
 
+
+console.log("I'm connected too!");

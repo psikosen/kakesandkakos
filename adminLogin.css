@@ -1,0 +1,162 @@
+*{
+    font-family: 'Open sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* navbar */ 
+
+#navbar{
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+/* navbar links */
+
+#navbar a{
+    float: right;
+    display: flex;
+    color: #fff;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+
+/* Portrait */
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+
+  /* mobile menu */
+
+
+
+  .mobileMenuLinks .active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 0 auto;
+    background-color: #000;
+    transform: translateY(18rem);
+    position: absolute;
+    bottom: 50%;
+    width: 57vh;
+    height: 101vh;
+    z-index: 900;
+    transition: all .4s ease-in-out;
+}
+
+.mobileMenuLinks{
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  height: 0 auto;
+  color: #000;
+  background-color: #000;
+  transform: translateY(18rem);
+  position: absolute;
+  width: 57vh;
+  height: 101vh;
+  z-index: 900;
+}
+
+  .closeBtnContainer{
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+   top: 3rem;
+  }
+
+  #closeBtn{
+    padding: 10px;
+    font-size: 65px;
+  }
+
+  /* navbar */
+
+  .navbarLinks{
+    display: none;
+  }
+
+  .mobileMenuBtn{
+    padding: 10px;
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .navbarLogo h6{
+      font-size: 22px;
+      letter-spacing: 2px;
+      color: #fff;
+    }
+
+    /* log in container */
+
+    .loginContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+
+    .loginTitle{
+        padding: 15px;
+    }
+
+    .loginTitle h3{
+        letter-spacing: 2px;
+        font-size: 30px;
+    }
+
+    .adminInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-content: left;
+        align-items: left;
+    }
+
+    .adminInfo input{
+        margin: 10px;
+        padding: 5px;
+        font-size: 23px;
+        border: none;
+        border-bottom: 2px solid #5555;
+    }
+
+    .loginContainer a{
+        margin: 15px;
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+
+    #logInBtn{
+        margin-top: 40px;
+        padding: 15px;
+        font-size: 20px;
+        background-color: #5555;
+        border: none;
+        border-radius: 50px;
+        letter-spacing: 2px;
+    }
+
+    .adminInfo ion-icon{
+        position: relative;
+        top: 40px;
+        right: 20px;
+    }
+
+
+}
